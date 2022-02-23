@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-image: url('images/logo.png');
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+    background-position: center;
+    height: 175px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(110,194,131,0.3);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding: 180px 60px 0 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+li a {
+    padding: 5px;
+    background-color: #fff;
+    text-decoration: none;;
+}
+
+.cart ion-icon {
+   vertical-align: bottom;
+   font-size: 20px;
+   padding-right: 5px;
+}
+
+.cart a {
+    background-color: rgba(110,194,131,0.3);
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container,
+.container-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    padding-bottom: 100px;;
+}
+
+.image {
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.add-cart {
+    position: absolute;
+    width: 100%;
+    background-color: darkgrey;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5,
+.image:hover .cart6,
+.image:hover .cart7,
+.image:hover .cart8,
+.image:hover .cart9,
+.image:hover .cart10,
+.image:hover .cart11,
+.image:hover .cart12,
+.image:hover .cart13,
+.image:hover .cart14,
+.image:hover .cart15,
+.image:hover .cart16,
+.image:hover .cart17,
+.image:hover .cart18,
+.image:hover .cart19,
+.image:hover .cart20,
+.image:hover .cart21,
+.image:hover .cart22,
+.image:hover .cart23,
+.image:hover .cart24,
+.image:hover .cart25,
+.image:hover .cart26,
+.image:hover .cart27,
+.image:hover .cart28,
+.image:hover .cart29,
+.image:hover .cart30,
+.image:hover .cart31,
+.image:hover .cart32,
+.image:hover .cart33,
+.image:hover .cart34,
+.image:hover .cart35,
+.image:hover .cart36,
+.image:hover .cart37,
+.image:hover .cart38,
+.image:hover .cart39,
+.image:hover .cart40,
+.image:hover .cart41,
+.image:hover .cart42,
+.image:hover .cart43,
+.image:hover .cart44,
+.image:hover .cart45,
+.image:hover .cart46,
+.image:hover .cart47,
+.image:hover .cart48,
+.image:hover .cart49,
+.image:hover .cart50,
+.image:hover .cart51,
+.image:hover .cart52,
+.image:hover .cart53,
+.image:hover .cart54,
+.image:hover .cart55,
+.image:hover .cart56,
+.image:hover .cart57,
+.image:hover .cart58,
+.image:hover .cart59,
+.image:hover .cart60,
+.image:hover .cart61,
+.image:hover .cart62,
+.image:hover .cart63,
+.image:hover .cart64,
+.image:hover .cart65,
+.image:hover .cart66, 
+.image:hover .cart67,
+.image:hover .cart68,
+.image:hover .cart69,
+.image:hover .cart70,
+.image:hover .cart71,
+.image:hover .cart72,
+.image:hover .cart73,
+.image:hover .cart74,
+.image:hover .cart75,
+.image:hover .cart76,
+.image:hover .cart77,
+.image:hover .cart78,
+.image:hover .cart79,
+.image:hover .cart80,
+.image:hover .cart81,
+.image:hover .cart82,
+.image:hover .cart83,
+.image:hover .cart84,
+.image:hover .cart85,
+.image:hover .cart86,
+.image:hover .cart87,
+.image:hover .cart88,
+.image:hover .cart89,
+.image:hover .cart90,
+.image:hover .cart91,
+.image:hover .cart92,
+.image:hover .cart93,
+.image:hover .cart94,
+.image:hover .cart95,
+.image:hover .cart96 {
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* ----------------- CART PAGE --------------- */
+
+.container-products {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+	padding-top:5px;
+}
+
+.container-products ion-icon {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.product ion-icon {
+    cursor: pointer;
+    
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 75px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}
+
+@media(max-width: 500px) {
+    nav h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;;
+    }
+
+    .sm-hide {
+        display: none;;
+    }
+
+    .products,
+    .product-header {
+        justify-content: center;
+    }
+
+    .basketTotalContainer {
+        padding-right: 8%;
+    }
+}
+
+/*-----Payment Page-----*/
+
+body {
+    background-color: rgba(10,10,10,0.2);
+}
+
+h1 {
+  color: #6ec283;
+  text-align: center;
+}
+
+form {
+  width: 350px;
+  margin: 0 auto;
+  padding-top:50px;
+}
+form .half input {
+  width: 165px;
+  float: left;
+}
+form .half input:first-child {
+  margin-right: 20px;
+}
+form input, form button {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 20px;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+}
+form input {
+  color: #1C1D21;
+}
+form button {
+  color: #1C1D21;
+  background: #EEEFF7;
+  font-weight: bold;
+}
+
+#nav2 {
+ background-color: rgba(110,194,131,0.3);
+ margin-right: 0px;
+ margin-left: 0px;
+ padding: .5em;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 6px;
+ color: #000;
+ font-family: 'Oswald';
+ font-size: 20px;
+ text-decoration: none;
+ border: none;
+}
+#nav2:hover {
+ border: none;
+ background: green;
+ box-shadow: 0px 0px 1px #777;
+}
+
+#submit {
+ background-color: lightgreen;
+ margin-left: 600px;
+ padding: .5em;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 6px;
+ color: #fff;
+ font-family: 'Oswald';
+ font-size: 20px;
+ text-decoration: none;
+ border: none;
+}
+#submit:hover {
+ border: none;
+ background: green;
+ box-shadow: 0px 0px 1px #777;
+}
+/*Dropdown Menu */
+.dropbtn {
+  background-color: rgba(110,194,131,0.3);
+   margin-left: 0px;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+     margin-left: 0px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+#home {
+	padding-left:200px;
+	padding-top: 60px;
+}
+
+#contact {
+	padding-left:150px;
+	padding-right:150px;
+	padding-top:55px;
+}
+
+#hometext {
+	padding-left: 10px;
+	padding-right:175px;
+}
+
+#submittext {
+	padding-left:50px;
+	padding-right:50px;
+	padding-top:60px;
+}
